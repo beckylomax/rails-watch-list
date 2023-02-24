@@ -1,0 +1,7 @@
+<ul>
+  <% @lists.each do |list| %>
+    <li><%= list.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a new list", new_list_url, class: "btn btn-primary"  %>
